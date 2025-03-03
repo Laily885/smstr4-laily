@@ -147,3 +147,8 @@ Route::match(['get', 'post'], '/user/{id}/profile/update', [ProfileController::c
 Route::get(uri:'/user' action: [ManagemetUserController::class, 'index']);
 
 Route ::resource(name: 'user', controller: ManagementUserController::class);
+
+//acara6
+Route::get("/home", function(){
+    return view("home");
+});
